@@ -26,3 +26,35 @@
 ├── ProductionOptimizer.py # Script: linear program solver for production
 └── README.md # This documentation
 
+
+---
+
+## 📊 Data Description
+
+- **CarPrice_Assignment.csv** (~2 000 records)  
+  Features include make, model, year, engine size, horsepower, mileage, and sale price.
+
+---
+
+## 🔧 Price Prediction
+
+Open `car-price-prediction.ipynb` to:
+
+1. Load, clean, and encode the data  
+2. Visualize distributions and correlations  
+3. Create derived features (e.g., `age = current_year − model_year`)  
+4. Split into training/test sets  
+5. Train and evaluate a Linear Regression model  
+6. Report metrics: R², MAE, RMSE  
+
+> **Result**: ~95 % variance explained on test set.
+
+---
+
+## ⚙️ Production Planning
+
+Run:
+
+```bash
+python ProductionOptimizer.py
+
